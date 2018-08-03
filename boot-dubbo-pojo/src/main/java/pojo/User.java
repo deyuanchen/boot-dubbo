@@ -5,7 +5,12 @@ import java.io.Serializable;
 
 
 /**
+ * <p>Tiltle: boot-dubbo </p>
+ * <p>Description: token生成器 </p>
  *
+ * @Author 陈德元
+ * data: 2018-08-03
+ * version: 1.0
  */
 public class User implements Serializable{
 

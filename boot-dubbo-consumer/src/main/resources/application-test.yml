@@ -1,6 +1,9 @@
 server:
   port: 8080
-
+#ZooKeeper
+dubbo:
+  registry:
+    address: 127.0.0.1:2181
 spring:
   application:
     name: boot-consumer
@@ -14,3 +17,4 @@ spring:
       max-wait: -1
       timeout: 0
     database: 1
+
