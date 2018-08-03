@@ -1,0 +1,52 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: boot-provider
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.104:3306/hwplat_test?characterEncoding=utf-8&allowMultiQueries=true
+    username: homework
+    password: homeWork0118
+    initial-size: 1
+    min-idle: 1
+    max-active: 20
+    test-on-borrow: true
+    max-wait: 60000
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 1 FROM DUAL
+    test-While-Idle: true
+    test-on-return: false
+    pool-prepared-statements: false
+    max-pool-prepared-statement-per-connection-size: 20
+    filters: stat,wall,log4j,config
+  redis:
+    host: redis
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+      timeout: 0
+    database: 1
+mybatis:
+  type-aliases-package: com.boot.mapper
+  mapper-locations: com/boot/mapper/*.xml
+
+
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    org:
+      springframework: WARN
+      spring:
+        springboot:
+          dao: debug
+    com:
+      boot:
+          mapper: debug

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/boot-dubbo.iml" filepath="$PROJECT_DIR$/.idea/boot-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-api/boot-dubbo-api.iml" filepath="$PROJECT_DIR$/boot-dubbo-api/boot-dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-common/boot-dubbo-common.iml" filepath="$PROJECT_DIR$/boot-dubbo-common/boot-dubbo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-consumer/boot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/boot-dubbo-consumer/boot-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-mapper/boot-dubbo-mapper.iml" filepath="$PROJECT_DIR$/boot-dubbo-mapper/boot-dubbo-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-pojo/boot-dubbo-pojo.iml" filepath="$PROJECT_DIR$/boot-dubbo-pojo/boot-dubbo-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-dubbo-provider/boot-dubbo-provider.iml" filepath="$PROJECT_DIR$/boot-dubbo-provider/boot-dubbo-provider.iml" />
+    </modules>
+  </component>
+</project>
