@@ -4,7 +4,9 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.boot.BaseController;
 
 import com.boot.service.TestService;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pojo.User;
@@ -23,7 +25,8 @@ public class TestController extends BaseController{
     private TestService testService;
 
     @GetMapping("hello")
-    public String hello() throws Exception {
+    public String hello(@NotBlank(message = "token不能为空")
+                            @RequestHeader(value = "Authorization") String authorization) throws Exception {
         throw new Exception();
        // return testService.sayHello("Hello springboot and dubbo!");
     }

@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * <p>Tiltle: boot-dubbo </p>
- * <p>Description: token生成器 </p>
+ * <p>Description: token生成器对象 </p>
  *
  * @Author 陈德元
  * data: 2018-08-03
